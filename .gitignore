@@ -1,0 +1,13 @@
+# Capturas de QA / artefactos locales
+output/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Node / Python temporales
+node_modules/
+.venv/
+__pycache__/
+*.pyc

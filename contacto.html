@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — Guitarras Falcón</title>
+<meta name="description" content="Contacta a Guitarras Falcón: WhatsApp, correo y taller en Luna Pizarro 310, La Victoria, Lima. Asesoría para elegir tu guitarra peruana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Guitarras Falcón — inicio">
+      <img src="assets/img/logo.svg" alt="Logo Guitarras Falcón">
+      <span class="brand__text">
+        <span class="brand__name">Guitarras Falcón</span>
+        <span class="brand__tag">Luthería · Lima · desde 1946</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="historia.html">Nuestra historia</a>
+      <a href="modelos.html">Guitarras</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn--wa btn--sm" href="https://wa.me/51997842063?text=Hola%20Guitarras%20Falc%C3%B3n%2C%20me%20interesa%20una%20guitarra." target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+    <a class="btn btn--dark btn--sm header-cta" href="contacto.html">Haga su pedido</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO INTERNO -->
+  <section class="hero">
+    <div class="container">
+      <div style="max-width:720px" class="reveal">
+        <p class="eyebrow">Hablemos</p>
+        <h1>Estamos en <em>La Victoria</em>, a un mensaje de distancia</h1>
+        <p class="hero__lead">
+          Escríbenos por WhatsApp para una respuesta rápida, o usa el formulario
+          si prefieres contarnos con calma qué guitarra buscas. Te ayudamos a
+          elegir el modelo adecuado sin compromiso.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--wa" href="https://wa.me/51997842063?text=Hola%20Guitarras%20Falc%C3%B3n%2C%20me%20interesa%20una%20guitarra." target="_blank" rel="noopener">WhatsApp +51 997 842 063</a>
+          <a class="btn btn--ghost" href="#formulario">Ir al formulario</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__band" aria-hidden="true">
+      <img src="assets/img/guitarra-hero.png" alt="" width="1772" height="356">
+    </div>
+  </section>
+
+  <!-- DATOS -->
+  <section class="section" style="padding-top:64px">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <p class="eyebrow eyebrow--center">Datos de contacto</p>
+        <h2>Elige el canal que prefieras</h2>
+      </div>
+      <div class="contacto-cards">
+        <div class="contacto-card reveal">
+          <h4>WhatsApp / Teléfono</h4>
+          <p><a href="https://wa.me/51997842063" target="_blank" rel="noopener">+51 997 842 063</a></p>
+          <p class="caption mt-2">La vía más rápida para consultas, fotos de guitarras disponibles y pedidos.</p>
+        </div>
+        <div class="contacto-card reveal" style="--delay:100ms">
+          <h4>Correo electrónico</h4>
+          <p><a href="mailto:contacto@falcontradiciones.com">contacto@falcontradiciones.com</a></p>
+          <p class="caption mt-2">Para cotizaciones institucionales, prensa y convenios con academias o peñas.</p>
+        </div>
+        <div class="contacto-card reveal" style="--delay:200ms">
+          <h4>Taller</h4>
+          <p>Luna Pizarro 310<br>La Victoria, Lima — Perú</p>
+          <p class="caption mt-2">Visítanos con cita previa. Ver el taller es parte de la experiencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="section section--alt" id="formulario">
+    <div class="container split split--7-5" style="align-items:start">
+      <div class="reveal-left">
+        <p class="eyebrow">Formulario</p>
+        <h2>Cuéntanos qué buscas</h2>
+        <p class="lead">
+          Completa el formulario y te responderemos por WhatsApp o correo.
+          También puedes escribirnos directo al WhatsApp si prefieres ir al grano.
+        </p>
+
+        <form id="form-contacto" class="mt-4" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="nombres">Nombres *</label>
+              <input id="nombres" name="nombres" type="text" required autocomplete="given-name" placeholder="Tu nombre">
+            </div>
+            <div class="form-field">
+              <label for="apellidos">Apellidos *</label>
+              <input id="apellidos" name="apellidos" type="text" required autocomplete="family-name" placeholder="Tus apellidos">
+            </div>
+            <div class="form-field">
+              <label for="telefono">Teléfono *</label>
+              <input id="telefono" name="telefono" type="tel" required autocomplete="tel" placeholder="+51 999 999 999">
+            </div>
+            <div class="form-field">
+              <label for="email">Correo electrónico *</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div class="form-field">
+              <label for="modelo">Tipo de guitarra</label>
+              <select id="modelo" name="modelo">
+                <option value="">Selecciona una opción</option>
+                <option value="Estudio">Estudio</option>
+                <option value="Export Peña">Export Peña</option>
+                <option value="Semi-Profesional">Semi-Profesional</option>
+                <option value="Por definir">Aún no lo sé, necesito asesoría</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="origen">¿Cómo nos conociste?</label>
+              <select id="origen" name="origen">
+                <option value="">Selecciona una opción</option>
+                <option value="Búsqueda Google">Búsqueda Google</option>
+                <option value="Recomendación">Recomendación de amigos o familia</option>
+                <option value="Radio">Radio</option>
+                <option value="Televisión">Televisión</option>
+                <option value="Redes sociales">Redes sociales</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-field form-field--full">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos qué guitarra buscas, para qué la usarás, tu presupuesto aproximado…"></textarea>
+            </div>
+            <div class="form-field form-field--full">
+              <label class="form-check">
+                <input type="checkbox" name="consentimiento" required>
+                <span>Acepto que Guitarras Falcón use mis datos para responder a esta consulta. No compartimos tu información con terceros.</span>
+              </label>
+            </div>
+            <div class="form-field form-field--full">
+              <button class="btn btn--dark" type="submit">Enviar consulta</button>
+              <p class="form-nota">Al enviar, se abrirá WhatsApp con tu consulta lista para mandar.</p>
+            </div>
+          </div>
+        </form>
+
+        <div id="form-exito" class="form-exito" role="status">
+          <h3 style="color:inherit">¡Gracias! Tu consulta está lista.</h3>
+          <p style="margin-bottom:18px">
+            Hemos preparado tu mensaje. Pulsa el botón para enviarlo por WhatsApp
+            y te responderemos lo antes posible.
+          </p>
+          <a class="btn btn--wa" data-wa-link href="https://wa.me/51997842063" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        </div>
+      </div>
+
+      <aside class="reveal-right">
+        <div class="contacto-card" style="background:var(--papel)">
+          <h4>¿Por qué WhatsApp?</h4>
+          <p style="font-size:0.98rem">
+            En el taller la respuesta es más ágil por WhatsApp: podemos enviarte
+            fotos de las guitarras disponibles, orientarte con el modelo y
+            coordinar la entrega o la visita.
+          </p>
+        </div>
+        <div class="contacto-card mt-3" style="background:var(--papel)">
+          <h4>Horario de atención</h4>
+          <p style="font-size:0.98rem">
+            Lunes a sábado, con cita previa.<br>
+            Escríbenos y coordinamos el mejor horario.
+          </p>
+        </div>
+        <div class="contacto-card mt-3" style="background:var(--papel)">
+          <h4>Para instituciones</h4>
+          <p style="font-size:0.98rem">
+            Academias, peñas, colegios y universidades: contamos con condiciones
+            especiales y facturación. Escríbenos y armamos una propuesta.
+          </p>
+        </div>
+        <figure class="mt-3">
+          <div class="media-frame media-frame--landscape">
+            <img src="assets/img/estructura-03.jpg" alt="Detalle de construcción de la guitarra peruana Falcón" width="779" height="1150" loading="lazy">
+            <span class="media-frame__badge">Detalle del taller</span>
+          </div>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="section" id="ubicacion">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <p class="eyebrow eyebrow--center">Ubicación</p>
+        <h2>Cómo llegar al taller</h2>
+        <p class="lead" style="margin-left:auto;margin-right:auto">
+          Luna Pizarro 310, La Victoria, Lima. El mismo taller donde la familia
+          Falcón construye guitarras desde hace décadas.
+        </p>
+      </div>
+      <div class="mapa reveal">
+        <iframe
+          title="Mapa de Guitarras Falcón en Luna Pizarro 310, La Victoria, Lima"
+          src="https://www.google.com/maps?q=Luna%20Pizarro%20310%2C%20La%20Victoria%2C%20Lima%2C%20Per%C3%BA&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+      <div class="text-center mt-4 reveal">
+        <a class="btn btn--primary" href="https://maps.google.com/?q=Luna+Pizarro+310,+La+Victoria,+Lima,+Per%C3%BA" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-final">
+    <div class="container">
+      <p class="eyebrow eyebrow--center reveal">¿Prefieres hablar?</p>
+      <h2 class="reveal">Un mensaje de WhatsApp y empezamos</h2>
+      <p class="lead reveal">
+        Te respondemos con fotos de las guitarras disponibles y te orientamos
+        para elegir la tuya.
+      </p>
+      <div class="cta-final__actions reveal">
+        <a class="btn btn--wa" href="https://wa.me/51997842063?text=Hola%20Guitarras%20Falc%C3%B3n%2C%20me%20interesa%20una%20guitarra." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <a class="btn btn--primary" href="modelos.html">Ver los modelos</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <div class="brand__name" style="font-family:var(--font-display)">Guitarras Falcón</div>
+        <div class="brand__tag" style="margin-top:6px">Luthería peruana desde 1946</div>
+        <p class="mt-3" style="max-width:32ch;font-size:0.95rem;">
+          La guitarra peruana clásica de concierto con estructura patentada.
+          Hecha a mano en La Victoria, Lima.
+        </p>
+        <p class="mt-2" style="font-size:0.88rem;color:rgba(245,238,227,0.55)">falcontradiciones.com</p>
+      </div>
+      <div>
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="historia.html">Nuestra historia</a></li>
+          <li><a href="modelos.html">Guitarras</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guitarras</h4>
+        <ul>
+          <li><a href="modelos.html#estudio">Estudio</a></li>
+          <li><a href="modelos.html#export-pena">Export Peña</a></li>
+          <li><a href="modelos.html#semi-profesional">Semi-Profesional</a></li>
+          <li><a href="index.html#innovacion">Estructura patentada</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:contacto@falcontradiciones.com">contacto@falcontradiciones.com</a></li>
+          <li><a href="tel:+51997842063">+51 997 842 063</a></li>
+          <li>Luna Pizarro 310<br>La Victoria, Lima — Perú</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span data-anio>2025</span> Guitarras Falcón · falcontradiciones.com. Todos los derechos reservados.</span>
+      <span>Estructura patentada · INDECOPI Resolución N.º 014132-2009</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
